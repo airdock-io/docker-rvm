@@ -1,3 +1,3 @@
-# Fake SNS
+# RVM
 
 Docker Image for [RVMS](https://rvm.io/) based on airdock/base:jessie

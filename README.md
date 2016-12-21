@@ -1,4 +1,4 @@
-# Fake RVM [![](https://images.microbadger.com/badges/image/airdock/rvm:latest.svg)](https://microbadger.com/images/airdock/rvm:latest "Get your own image badge on microbadger.com")
+# RVM [![](https://images.microbadger.com/badges/image/airdock/rvm:latest.svg)](https://microbadger.com/images/airdock/rvm:latest "Get your own image badge on microbadger.com")
 
 Docker Image for [RVMS](https://rvm.io/) based on airdock/base:jessie
 

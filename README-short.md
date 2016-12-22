@@ -1,3 +1,3 @@
 # RVM
 
-Docker Image for [RVMS](https://rvm.io/) based on airdock/base:jessie
+Docker Image for [RVM](https://rvm.io/) based on airdock/base:jessie

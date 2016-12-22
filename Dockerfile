@@ -1,10 +1,10 @@
 # VERSION 1.0
 # AUTHOR:         Jerome Guibert <jguibert@gmail.com>
-# DESCRIPTION:    RVM based on airdock/base
+# DESCRIPTION:    RVM based on airdock/base:jessie
 # TO_BUILD:       docker build --rm -t airdock/rvm .
 # SOURCE:         https://github.com/airdock-io/docker-rvm
 
-FROM airdock/base:latest
+FROM airdock/base:jessie
 MAINTAINER Jerome Guibert <jguibert@gmail.com>
 
 ENV PATH /usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin

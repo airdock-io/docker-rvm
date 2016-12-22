@@ -25,4 +25,4 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends ca-certific
   /root/create-user ruby 4208 ruby 4208 && usermod  -a -G rvm ruby  && \
   /root/post-install
 
-CMD ["gosu", "ruby:ruby", "/bin/bash", "-l"]
+CMD ["tini", "-g", "--", "gosu", "ruby:ruby", "/bin/bash", "-l"]

@@ -5,10 +5,10 @@ Docker Image for [RVM](https://rvm.io/) based on airdock/base:jessie
 
 Purpose of this image is:
 
-- install [RVM](https://rvm.io/)
-- install ruby 2.3
+- install [RVM](https://rvm.io/) with gpg check
+- install ruby 2.3(.3 actually)
+- use ruby:ruby user in container (ruby user is in rvm group)
 - based on airdock/base:jessie
-
 
 > Name: airdock/rvm
 
@@ -17,19 +17,31 @@ Purpose of this image is:
 
 You should have already install [Docker](https://www.docker.com/).
 
-Execute:
+Example:
 
-		docker run -ti airdock/rvm /bin/bash-l -c "ruby --version"
+```
+    # use initialize login bash
+		docker run -ti airdock/rvm /bin/bash -l -c "ruby --version"
+
+		# use rvm
+		docker run -ti airdock/rvm rvm ruby do ruby --version
+
+		# use ruby:ruby user
+		docker run -ti airdock/rvm gosu ruby:ruby rvm ruby do ruby --version
+
+		# use ruby:ruby user AND tini for process managment
+		docker run -ti airdock/rvm tini -g -- gosu ruby:ruby rvm ruby do ruby --version
+```
+
 
 # Change Log
 
-## 2012/12/21
-
+## current
 - install rvm and ruby
+- add ruby:ruby user
 - MIT license
 
 # Build
-
 
 - Install "make" utility, and execute: `make build`
 - Or execute: 'docker build -t airdock/rvm:latest --rm .'

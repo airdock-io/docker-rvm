@@ -22,6 +22,7 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends ca-certific
   rvm install ruby-2.3  && \
   echo "source /usr/local/rvm/scripts/rvm" >> /etc/profile && \
   echo "rvm use ruby-2.3 --default"  >> /etc/profile && \
+  /root/create-user ruby 4208 ruby 4208 && usermod  -a -G rvm ruby  && \
   /root/post-install
 
-CMD ["/bin/bash", "-l"]
+CMD ["gosu", "ruby:ruby", "/bin/bash", "-l"]

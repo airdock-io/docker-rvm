@@ -17,4 +17,7 @@ tag_latest:
 		@docker tag $(NAME):$(VERSION) $(NAME):latest
 
 debug:
-	docker run -t -i $(NAME):$(VERSION) /bin/bash -l -c "ruby --version"
+		docker run -t -i $(NAME):$(VERSION)
+
+run:
+		docker run -t -i $(NAME):$(VERSION) /bin/bash -l -c "ruby --version"

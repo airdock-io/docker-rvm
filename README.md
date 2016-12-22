@@ -5,7 +5,8 @@ Docker Image for [RVMS](https://rvm.io/) based on airdock/base:jessie
 
 Purpose of this image is:
 
-- install [RVM](https://rvm.io/) and default ruby
+- install [RVM](https://rvm.io/)
+- install ruby 2.3
 - based on airdock/base:jessie
 
 
@@ -18,13 +19,13 @@ You should have already install [Docker](https://www.docker.com/).
 
 Execute:
 
-		docker run -ti airdock/rvm ruby --version
+		docker run -ti airdock/rvm /bin/bash-l -c "ruby --version"
 
 # Change Log
 
 ## 2012/12/21
 
-- install rvm and ruby (newer version is needed for fake-sns)
+- install rvm and ruby
 - MIT license
 
 # Build

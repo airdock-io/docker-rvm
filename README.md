@@ -24,13 +24,13 @@ Example:
 		docker run -ti airdock/rvm /bin/bash -l -c "ruby --version"
 
 		# use rvm
-		docker run -ti airdock/rvm rvm ruby do ruby --version
+		docker run -ti airdock/rvm rvm ruby-2.3 do ruby --version
 
 		# use ruby:ruby user
-		docker run -ti airdock/rvm gosu ruby:ruby rvm ruby do ruby --version
+		docker run -ti airdock/rvm gosu ruby:ruby rvm ruby-2.3 do ruby --version
 
 		# use ruby:ruby user AND tini for process managment
-		docker run -ti airdock/rvm tini -g -- gosu ruby:ruby rvm ruby do ruby --version
+		docker run -ti airdock/rvm tini -g -- gosu ruby:ruby rvm ruby-2.3 do ruby --version
 ```
 
 

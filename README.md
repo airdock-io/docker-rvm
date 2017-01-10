@@ -12,6 +12,18 @@ Purpose of this image is:
 
 > Name: airdock/rvm
 
+Few link:
+- https://blog.codeship.com/build-minimal-docker-container-ruby-apps/
+- https://github.com/docker-library/ruby
+
+
+At this time of writing, you should use docker ruby image from official library.
+You cloud retreive usefull image based on alpine.
+
+# Tags
+
+- latest: rvm and ruby 2.3 based on airdock/base:jessie [![](https://images.microbadger.com/badges/image/airdock/rvm:latest.svg)](https://microbadger.com/images/airdock/rvm:latest "Get your own image badge on microbadger.com")
+
 
 # Usage
 
@@ -36,10 +48,12 @@ Example:
 
 # Change Log
 
-## current
+
+## latest
+
 - install rvm and ruby
 - add ruby:ruby user
-- MIT license
+
 
 # Build
 

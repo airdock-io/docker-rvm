@@ -1,5 +1,5 @@
 NAME = airdock/rvm
-VERSION = dev
+VERSION = dev-jessie
 
 .PHONY: all clean build tag_latest release debug run
 

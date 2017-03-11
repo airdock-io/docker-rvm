@@ -5,7 +5,7 @@
 # SOURCE:         https://github.com/airdock-io/docker-rvm
 
 FROM airdock/base:jessie
-MAINTAINER Jerome Guibert <jguibert@gmail.com>
+LABEL maintainer Jerome Guibert <jguibert@gmail.com>
 
 ENV PATH /usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
